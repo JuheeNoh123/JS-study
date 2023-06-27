@@ -33,7 +33,7 @@ function getName() {
   return myName;
 }
 //myName Global Scope
-*/
+
 
 
 function getName() {
@@ -53,3 +53,13 @@ function getName() {
     }
     //displayFullName도 Global Scope
     console.log(displayFullName()); // => ReferenceError: lastName is not define
+*/
+
+  function init() {
+  var name = "JUHEE"; // name은 init에 의해 생성된 지역 변수이다.
+  function displayName() { // displayName() 은 내부 함수이며, 클로저다.
+    console.log(name); // 부모 함수에서 선언된 변수를 사용한다.
+  }
+  displayName();
+}
+init();
