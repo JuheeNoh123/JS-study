@@ -53,7 +53,7 @@ function getName() {
     }
     //displayFullName도 Global Scope
     console.log(displayFullName()); // => ReferenceError: lastName is not define
-*/
+
 
   function init() {
   var name = "JUHEE"; // name은 init에 의해 생성된 지역 변수이다.
@@ -63,3 +63,30 @@ function getName() {
   displayName();
 }
 init();
+
+
+const juhee=[1,2,3];
+juhee.push(4);
+
+console.log(juhee);
+console.log(juhee.length);
+
+juhee.pop();
+console.log(juhee);
+
+const juhee = {};
+juhee.push(1);
+juhee.push(2);
+
+console.log(juhee);
+
+//let sum = (a,b) => (a+b);
+
+let sum= function(a,b){
+  return a+b;
+}
+console.log(sum(1,2));
+
+*/
+
+
